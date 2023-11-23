@@ -1,0 +1,69 @@
+/***********************************************************************************/
+/*                        Hoja de estilo de tortilla.html                          */
+/*                        Author: Rafael Moncayo                                   */
+/*                        version: 1.0                                             */
+/*                        fecha: octubre 2023                                      */
+/*                        Comments: ejercicio para porfolio (1)                    */
+/***********************************************************************************/
+
+@font-face {
+        font-family: Texto1;
+        src: url(../fonts/Lemodis\ Display.otf);
+}
+@font-face {
+        font-family: Texto2;
+        src: url(../fonts/Mumsies.ttf);
+}
+@font-face {
+        font-family: Texto3;
+        src: url(../fonts/Calera.\ OTF.otf);
+}
+* {box-sizing: border-box;}
+
+body {background-color: rgba(11, 136, 214, 0.336);
+        background-image: url(../imagenes/fondo.jpg);
+        font-family: texto3;
+        font-size: 1.2em;}
+#wrapper {background-color: white;
+        width: 80vw;
+        margin: auto;
+        padding: 3%;
+        box-shadow: 7px 0px 50px 0px rgb(37, 37, 36);}
+
+h1{font-family: Texto1;
+        font-size: 3.5em;
+        text-align: center;
+        border-bottom: 3px black solid;
+        width: 55%;
+        margin: auto;
+        border-radius: 50px;
+        margin-bottom: 40px;}
+h2{font-family: Texto2;
+        font-size: 2em;
+        padding: 5px;
+        color: rgb(190, 39, 39);}
+blockquote{border-left: 6px solid blue;}
+
+li{padding: 5px;}
+
+#macarrones{width: 60%;
+        display: block;
+        margin: 5vh auto;
+        border-radius: 30vh;
+        border:  5px solid black}
+
+#macarrones2{width: 40%;
+        float:  right;
+        margin: 5vh auto;
+        box-shadow: 2px 5px 30px 5px rgb(37, 37, 36);
+        border:  2px solid black}
+
+/**** GESTION DE LA RESPONSIVIDAD *****/
+
+@media only screen and (width<800px) {
+        #wrapper {width: 97%;}
+        h1 {width: 88%;}
+        #macarrones {width: 100%;}
+        #macarrones {float: top;
+                width: 80%;}
+}

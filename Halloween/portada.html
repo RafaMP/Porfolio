@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/portada.css">
+    <link rel="shortcut icon" href="./imag/favi.png" type="image/x-icon">
+    <script src="./js/portada.js"></script>
+    <title>Portada</title>
+</head>
+<body>
+    <div class="content1">
+        <h1>HAPPY HALLOWEEN</h1>
+        <h2>Entra y disfruta de la experiencia</h2>
+        <div class="btn">
+            <a href="./index.html">
+                <button type="button">ENTER</button>
+            </a>
+        </div>
+    </div>
+    <div class="content">
+        <div id="pumpkin" onmouseover="show('pumpkin1');sound('pumpkinsound')" onmouseout="hide('pumpkin1');pause('pumpkinsound')"> </div>
+        <img id="pumpkin1" src="./imag/calabazaprincipal.gif" alt="">
+        <audio id="pumpkinsound" preload>
+            <source src="./sounds/audiocalabaza.mp3" type="audio/mp3">
+        </audio>
+    </div>
+</body>
+</html>

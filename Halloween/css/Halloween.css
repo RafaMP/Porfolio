@@ -1,0 +1,117 @@
+/***********************************************************************************/
+/*                        Hoja de estilo de Halloween.html                         */
+/*                        Author: Rafael Moncayo                                   */
+/*                        version: 1.0                                             */
+/*                        fecha: noviembre 2023                                    */
+/*                        Comments: ejercicio para porfolio (2)                    */
+/***********************************************************************************/
+
+font-face{
+    font-family: Titulo;
+    src: url(../font/October\ Crow.ttf);}
+
+#scenario { background-image: url(../imag/fondo.jpg);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: cover;
+    
+    }
+h1 {color: white;
+    font-family: Titulo;
+    position: absolute;
+    top: 625px;
+    left: 467px;
+    font-size: 50px;
+}
+p {color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    font-size: 10px;
+    max-width: 70px;
+}
+
+/***********************************************************************************/
+
+#pumpkin {width: 220px;
+    height: 140px;       ; 
+    position: relative;
+    top: 410px;
+    left: 350px;
+}
+#pumpkin1 {position: absolute;
+    width: 70%;
+    top: -50px;
+    left: 200px;
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+/***********************************************************************************/
+
+#ghost {width: 60px;
+height: 140px;
+position: relative;
+top: -40px;
+left: 1190px;
+
+}
+#ghost1 {
+    position: absolute;
+    top: 40px;
+    left: 980px;
+    width: 20%;
+visibility: hidden;
+}
+/***********************************************************************************/
+
+#man {width: 40px;
+    height: 100px;
+    position: relative;
+    top: 100px;
+    left: 579px;
+    
+    }
+#man1 {
+    position: absolute;
+    top: 350px;
+    left: 630px;
+    width: 20%;
+    visibility: hidden;
+    }
+
+/***********************************************************************************/
+
+#dead {width: 60px;
+    height: 100px;
+    position: relative;
+    top: 30px;
+    left: 970px;
+    
+    }
+#dead1 {
+    position: absolute;
+    top: 400px;
+    left: 930px;
+    width: 10%;
+    visibility: hidden;
+    }
+
+/***********************************************************************************/
+
+#door {width: 70px;
+    height: 80px;
+    position: relative;
+    top: -350px;
+    left: 850px;
+    
+    }
+#door1 {
+    position: absolute;
+    top: 0px;
+    left: 700px;
+    width: 30%;
+    visibility: hidden;
+    }
