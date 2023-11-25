@@ -6,23 +6,45 @@
 /*                        Comments: ejercicio para porfolio (2)                    */
 /***********************************************************************************/
 
-font-face{
+@font-face{
     font-family: Titulo;
     src: url(../font/October\ Crow.ttf);}
 
+@font-face{
+    font-family: texto;
+    src: url(../font/Ghastly\ Panic.ttf);}
+
 #scenario { background-image: url(../imag/fondo.jpg);
     background-repeat: no-repeat;
-    background-color: black;
+    color: black;
     background-size: cover;
     
     }
+
+body{
+    background-color: black;
+}
+
 h1 {color: white;
     font-family: Titulo;
     position: absolute;
     top: 625px;
-    left: 467px;
+    left: 580px;
     font-size: 50px;
+    animation: botar 2s infinite, cambioDeColor 4s infinite;
 }
+
+h3 {position: absolute;
+    color: white;
+    font-family: texto;
+    position: absolute;
+    top: 70px;
+    left: 267px;
+    font-size: 30px;
+    text-decoration: underline;
+    animation: texto1 5s ;
+}
+
 p {color: white;
     font-weight: bold;
     border: 1px solid white;
@@ -47,15 +69,16 @@ p {color: white;
     left: 200px;
     border-radius: 50%;
     visibility: hidden;
+
 }
 
 /***********************************************************************************/
 
 #ghost {width: 60px;
-height: 140px;
-position: relative;
-top: -40px;
-left: 1190px;
+    height: 140px;
+    position: relative;
+    top: -40px;
+    left: 1190px;
 
 }
 #ghost1 {
@@ -63,7 +86,7 @@ left: 1190px;
     top: 40px;
     left: 980px;
     width: 20%;
-visibility: hidden;
+    visibility: hidden;
 }
 /***********************************************************************************/
 
@@ -80,6 +103,7 @@ visibility: hidden;
     left: 630px;
     width: 20%;
     visibility: hidden;
+    animation: cambioColor 5s infinite;
     }
 
 /***********************************************************************************/
@@ -115,3 +139,53 @@ visibility: hidden;
     width: 30%;
     visibility: hidden;
     }
+
+/***********************************************************************************/
+
+@keyframes cambioColor {
+    0% { color: red; font-size: 20px; max-width: 150px;}
+    25% { color: white; }
+    50% { color: red; }
+    75% { color: white; }
+    100% { color: red; }
+    }
+
+@keyframes texto1 {
+    0% {
+        color: red; font-size: 70px;
+        transform: rotate(0deg);
+        color: rgb(255, 20, 20);
+    }
+    100% {
+        color: red; font-size: 30px;
+        transform: rotate(360deg);
+        color: rgb(191, 151, 151);
+    }
+}
+
+@keyframes botar {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes cambioDeColor {
+    0%, 100% {
+        color: rgb(240, 163, 10);
+    }
+    25% {
+        color: rgb(56, 56, 10);
+    }
+    50% {
+        color: rgb(240, 163, 10);
+    }
+    75% {
+        color: rgb(56, 56, 10);
+    }
+}
